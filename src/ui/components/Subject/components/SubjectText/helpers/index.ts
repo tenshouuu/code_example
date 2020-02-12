@@ -1,0 +1,4 @@
+
+export {
+    textBySubject,
+} from './consts';

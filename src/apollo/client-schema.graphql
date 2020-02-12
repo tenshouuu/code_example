@@ -1,0 +1,19 @@
+directive @client on FIELD
+
+type savedTestResultType {
+    id: [ID]
+    score: Float
+    maxScore: Int
+    test: TestType
+}
+
+extend type Query {
+    """ Запись результатов прохождения теста """
+    addToTestsCollection(savedResults: String!): Boolean
+
+    """ Фильтрация тестов """
+    testCollection(slugs: [SubjectsEnum]): Boolean
+
+    """ Получение сохраненных тестов """
+    savedTestResults: savedTestResultType
+}

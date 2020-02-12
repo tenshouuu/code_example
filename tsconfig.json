@@ -1,0 +1,29 @@
+{
+    "outDir": "./dist/",
+    "compilerOptions": {
+        "target": "es6",
+        "module": "commonjs",
+        "jsx": "react",
+        "strict": true,
+        "noImplicitAny": false,
+        "strictNullChecks": true,
+        "allowSyntheticDefaultImports": true,
+        "esModuleInterop": true,
+        "skipLibCheck": true,
+        "declaration": true,
+        "typeRoots": [
+            "node_modules/@types",
+            "typings"
+        ],
+        "baseUrl": "./",
+        "paths": {
+            "@client/*": ["src/*"]
+        }
+    },
+    "include": [
+        "src/**/*"
+    ],
+    "exclude": [
+        "node_modules"
+    ]
+}

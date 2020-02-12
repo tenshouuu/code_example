@@ -1,0 +1,5 @@
+query ManualLogin($email: String!, $password: String!) {
+    manualLogin(email: $email, password: $password) @connection (key: "login") {
+        accessToken
+    }
+}

@@ -1,0 +1,42 @@
+{
+    "parser":  "@typescript-eslint/parser",
+    "extends": [
+        "plugin:react/recommended",
+        "@client/eslint-config-studyworld",
+        "plugin:@typescript-eslint/recommended"
+    ],
+    "plugins": [
+        "react-hooks"
+    ],
+    "settings": {
+        "import/resolver": {
+            "webpack": {
+                "config": "./webpack.resolve.js"
+            }
+        }
+    },
+    "rules": {
+        "import/extensions": [
+            "error",
+            "ignorePackages",
+            {
+                "ts": "never",
+                "tsx": "never"
+            }
+        ],
+        "react-hooks/rules-of-hooks": "error",
+        "react-hooks/exhaustive-deps": "warn",
+        "react/no-array-index-key": 1,
+        "react/prop-types": 0,
+        "no-plusplus": 0,
+        "react/jsx-closing-tag-location": 0,
+        "react/jsx-filename-extension": 0,
+        "@typescript-eslint/explicit-member-accessibility": 0,
+        "@typescript-eslint/explicit-function-return-type":0,
+        "import/prefer-default-export": 0,
+        "import/no-useless-path-segments": 0,
+        "jsx-a11y/no-static-element-interactions": 0,
+        "jsx-a11y/click-events-have-key-events": 0,
+        "jsx-a11y/no-noninteractive-element-interactions": 0
+    }
+}

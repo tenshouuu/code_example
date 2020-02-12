@@ -1,0 +1,10 @@
+{
+    "schemaPath": "schema.json",
+    "includes": ["src"],
+    "extensions": {
+        "endpoints": {
+            "dev": "http://test.example.ru/graphql",
+            "prod": "https://example.ru/graphql"
+        }
+    }
+}

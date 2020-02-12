@@ -1,0 +1,14 @@
+query GetProfileData {
+    me {
+        id
+        courses {
+            id
+        }
+        gamificationProgress {
+            experience
+            levelLabel
+            progress
+            nextLevelLabel
+        }
+    }
+}

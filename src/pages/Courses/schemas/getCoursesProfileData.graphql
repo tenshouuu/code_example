@@ -1,0 +1,19 @@
+query getCoursesProfileData {
+    me {
+        id
+        courses {
+            id
+            subject {
+                id
+                slug
+            }
+        }
+        subjects {
+            id
+            slug
+            courses {
+                id
+            }
+        }
+    }
+}

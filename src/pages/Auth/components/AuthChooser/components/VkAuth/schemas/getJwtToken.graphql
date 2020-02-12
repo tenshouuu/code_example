@@ -1,0 +1,5 @@
+query GetJwtToken($provider: String!, $token: String!) {
+    login(provider: $provider, token: $token) @connection (key: "login") {
+        accessToken
+    }
+}

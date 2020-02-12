@@ -1,0 +1,16 @@
+.idea
+.pnp
+.yarn
+.yarnrc.yml
+node_modules
+*.log
+dist
+schema.json
+yarn-error.log
+.env.production
+.env.development
+
+src/apollo/fragmentTypes.d.ts
+src/apollo/fragmentTypes.ts
+src/apollo/schemaTypes.ts
+src/apollo/hocs.tsx
